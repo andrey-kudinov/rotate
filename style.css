@@ -47,17 +47,24 @@ input {
 div {
   cursor: pointer;
   transition: 1s ease;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  -webkit-tap-highlight-color: transparent;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+   user-select: none;
 }
 .close {
-  transform: rotateX(180deg);
+  transform: rotateX(180deg) rotateZ(0deg);
   opacity: 0;
 }
 .second-letter {
   opacity: 0;
-  transform: rotateX(180deg);
+  transform: rotateX(180deg) rotateZ(0deg); 
 } 
 .open {
-  transform: rotateX(0deg);
+  transform: rotateX(0deg) rotateZ(0deg);
   opacity: 1;
 }
 
