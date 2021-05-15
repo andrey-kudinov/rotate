@@ -1,0 +1,63 @@
+html {
+  width: 100%;
+  min-height: 100vh;
+  background-color: lavender;
+  overflow: hidden auto;
+}
+body {
+  font-family: system-ui, sans-serif;
+}
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+section {
+  width: 100%;
+  height: 90vh;
+  display: grid;
+  place-items: center;
+  position: relative;
+}
+input {
+  padding: 0 20px;
+  border-radius: 30px;
+  height: 35px;
+}
+.in {
+  position: absolute;
+  top: 20%;
+}
+.out {
+  position: absolute;
+  top: 30%;
+}
+.first, .second  {
+  font-weight: 100;
+  letter-spacing: 10px;
+  text-transform: uppercase;
+  font-size: 30px;
+  display: flex;
+}
+.first{
+  z-index: 2;
+}
+.second {
+  position: absolute;
+}
+div {
+  cursor: pointer;
+  transition: 1s ease;
+}
+.close {
+  transform: rotateX(180deg);
+  opacity: 0;
+}
+.second-letter {
+  opacity: 0;
+  transform: rotateX(180deg);
+} 
+.open {
+  transform: rotateX(0deg);
+  opacity: 1;
+}
+
